@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/header :: header" />
+<body>
+<div class="container">
+  <div th:replace="fragments/bodyHeader :: bodyHeader" />
+  <div>
+    <table class="table table-striped">
+      <thead>
+      <tr>
+        <th>ID</th>
+        <th>이름</th>
+        <th>원산지</th>
+        <th>생산자</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr th:each="food : ${foods}">
+        <td th:text="${food.id}"></td>
+        <td th:text="${food.name}"></td>
+        <td th:text="${food.origin}"></td>
+        <td th:text="${food.producer}"></td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+  <div th:replace="fragments/footer :: footer" />
+</div> <!-- /container -->
+</body>
+</html>
