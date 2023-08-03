@@ -42,7 +42,6 @@ public class MemberService{
     }
 
     public void plusAllergy(Member member,Allergy allergy){
-        MemberAllergy memberAllergy = new MemberAllergy(allergy,member);
-        member.getAllergyList().add(memberAllergy);
+        memberRepository.plusAllergy(member,allergy);
     }
 }

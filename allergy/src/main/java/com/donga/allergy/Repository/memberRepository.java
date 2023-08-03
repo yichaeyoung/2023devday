@@ -1,6 +1,7 @@
 package com.donga.allergy.Repository;
 
 import com.donga.allergy.domain.Allergy.Allergy;
+import com.donga.allergy.domain.Allergy.MemberAllergy;
 import com.donga.allergy.domain.MemberDomain.Member;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.PersistenceContext;
@@ -34,8 +35,10 @@ public class memberRepository {
                 .getResultList();
     }
 
-    public void plusAllergy(Allergy allergy,Member member){
-        member.getAllergyList().add(allergy);
-        allergy.setMember(member);
+    public void plusAllergy(Member member,Allergy allergy){
+        MemberAllergy memberAllergy = new MemberAllergy(allergy,member);
+        em.persist(memberAllergy);
+        member.getAllergyList().add(memberAllergy);
+        memberAllergy.setMember(member);
     }
 }
