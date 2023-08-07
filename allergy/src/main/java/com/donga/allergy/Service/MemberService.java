@@ -41,6 +41,7 @@ public class MemberService{
         return memberRepository.findOne(id);
     }
 
+    @Transactional
     public void plusAllergy(Member member,Allergy allergy){
         memberRepository.plusAllergy(member,allergy);
     }

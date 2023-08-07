@@ -1,7 +1,6 @@
 package com.donga.allergy.domain.Food;
 
 import com.donga.allergy.domain.Allergy.Allergy;
-import com.donga.allergy.domain.Menu;
 import jakarta.persistence.*;
 import lombok.AccessLevel;
 import lombok.Getter;
@@ -21,6 +20,9 @@ public class Food {
     private String origin;
     private String producer;
 
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name="member_id")
+    private Allergy allergy;
     public Food(String name, String origin, String producer) {
         this.name = name;
         this.origin = origin;

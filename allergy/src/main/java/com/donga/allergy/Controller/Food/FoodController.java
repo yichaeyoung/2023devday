@@ -1,6 +1,5 @@
 package com.donga.allergy.Controller.Food;
 
-import com.donga.allergy.Repository.foodRepository;
 import com.donga.allergy.Repository.foodSearch;
 import com.donga.allergy.Service.FoodService;
 import com.donga.allergy.domain.Food.Food;
@@ -18,9 +17,7 @@ import java.util.List;
 @Controller
 public class FoodController {
 
-
     @Autowired FoodService foodService;
-
 
     @GetMapping("/food/new")
     public String createFood(Model model){

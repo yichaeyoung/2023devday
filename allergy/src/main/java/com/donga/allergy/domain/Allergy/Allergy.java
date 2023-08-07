@@ -1,7 +1,6 @@
 package com.donga.allergy.domain.Allergy;
 
 import com.donga.allergy.domain.Food.AllergyFood;
-import com.donga.allergy.domain.Food.Food;
 import com.donga.allergy.domain.MemberDomain.Member;
 import com.donga.allergy.domain.Menu;
 import jakarta.persistence.*;

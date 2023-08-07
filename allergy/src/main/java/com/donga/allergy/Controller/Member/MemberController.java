@@ -55,7 +55,7 @@ public class MemberController {
         List<Allergy> allergys = allergyService.findAllergys();
         model.addAttribute("members",members);
         model.addAttribute("allergys",allergys);
-        return "/members/updateAllergy";
+        return "/members/updateMemberAllergy";
     }
 
     @PostMapping("/members/updateAllergy")
@@ -63,6 +63,6 @@ public class MemberController {
         Member findmember = memberService.findmember(memberId);
         Allergy allergy = allergyService.findAllergy(allergyId);
         memberService.plusAllergy(findmember,allergy);
-        return "/members/updateAllergy";
+        return "/members/updateMemberAllergy";
     }
 }

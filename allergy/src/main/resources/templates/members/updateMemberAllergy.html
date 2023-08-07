@@ -1,16 +1,33 @@
 <!DOCTYPE HTML>
 <html xmlns:th="http://www.thymeleaf.org">
-<head th:replace="fragments/header :: header"></head>
-<style>
-  .fieldError {
-    border-color: #bd2130;
-  }
-</style>
+<head th:replace="fragments/header :: header" />
 <body>
 <div class="container">
-  <div th:replace="fragments/bodyHeader :: bodyHeader"></div>
-  <form role="form" action="/members/new" th:object="${memberForm}" method="post">
-  <div th:replace="fragments/footer :: footer"></div>
+  <div th:replace="fragments/bodyHeader :: bodyHeader"/>
+  <form role="form" action="/members/updateAllergy" method="post">
+
+    <div class="form-group">
+      <label for="member">회원명</label>
+      <select name="memberId" id="member" class="form-control">
+        <option value="">회원</option>
+        <option th:each="member : ${members}"
+                th:value="${member.id}"
+                th:text="${member.name}" />
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="allergy">알러지명</label>
+      <select name="allergyId" id="allergy" class="form-control">
+        <option value="">알러지</option>
+        <option th:each="allergy : ${allergys}"
+                th:value="${allergy.id}"
+                th:text="${allergy.name}" />
+      </select>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+  <br/>
+  <div th:replace="fragments/footer :: footer" />
 </div> <!-- /container -->
 </body>
 </html>

@@ -1,7 +1,5 @@
 package com.donga.allergy.domain;
 
-import com.donga.allergy.domain.Allergy.Allergy;
-import com.donga.allergy.domain.Food.Food;
 import com.donga.allergy.domain.Food.MenuFood;
 import jakarta.persistence.*;
 import lombok.AccessLevel;
