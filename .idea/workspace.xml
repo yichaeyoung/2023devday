@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f4ba0373-633d-408a-b139-0eeec008bf0e" name="Changes" comment="하준">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="f4ba0373-633d-408a-b139-0eeec008bf0e" name="Changes" comment="하준" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -43,7 +41,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/hajun/Desktop/2023devday-master/2023devday-master/allergy",
+    "last_opened_file_path": "C:/Users/hajun/Desktop/2023devday-master/2023devday-master",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -93,6 +91,7 @@
       <workItem from="1691045977710" duration="865000" />
       <workItem from="1691070699816" duration="214000" />
       <workItem from="1691373563208" duration="21000" />
+      <workItem from="1691399059414" duration="160000" />
     </task>
     <task id="LOCAL-00001" summary="하준">
       <created>1689496398139</created>
