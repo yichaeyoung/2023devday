@@ -21,6 +21,9 @@ public class foodRepository {
         em.persist(food);
     }
 
+    public Food findOne(Long id){
+        return em.find(Food.class,id);
+    }
     public List<Food> find_food(foodSearch foodSearch){
         String jpql = "select f from Food f";
         boolean isFirstCondition = true;

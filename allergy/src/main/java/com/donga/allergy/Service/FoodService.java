@@ -18,6 +18,10 @@ public class FoodService {
 
     @Transactional
     public void joinFood(Food food){ foodRepository.save(food);}
+
+    public Food findFood(Long id){
+        return foodRepository.findOne(id);
+    }
     public List<Food> findFoods(foodSearch foodSearch){
         return foodRepository.find_food(foodSearch);
     }

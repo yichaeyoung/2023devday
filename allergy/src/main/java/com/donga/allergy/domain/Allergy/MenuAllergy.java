@@ -25,4 +25,9 @@ public class MenuAllergy {
     @JoinColumn(name = "menu_id")
     private Menu menu;
     //알러지 메뉴
+
+    public MenuAllergy(Allergy allergy, Menu menu) {
+        this.allergy = allergy;
+        this.menu = menu;
+    }
 }

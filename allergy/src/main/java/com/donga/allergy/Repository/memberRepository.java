@@ -39,6 +39,5 @@ public class memberRepository {
         MemberAllergy memberAllergy = new MemberAllergy(allergy,member);
         em.persist(memberAllergy);
         member.getAllergyList().add(memberAllergy);
-        memberAllergy.setMember(member);
     }
 }

@@ -9,5 +9,4 @@ import lombok.Setter;
 @RequiredArgsConstructor
 public class foodSearch {
     private String food_name;
-
 }

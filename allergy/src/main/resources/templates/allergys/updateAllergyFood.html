@@ -4,24 +4,24 @@
 <body>
 <div class="container">
   <div th:replace="fragments/bodyHeader :: bodyHeader"/>
-  <form role="form" action="/members/updateAllergy" method="post">
+  <form role="form" action="/allergys/updateFood" method="post">
 
     <div class="form-group">
-      <label for="member">회원명</label>
-      <select name="memberId" id = "member" class="form-control">
-        <option value="">회원</option>
-        <option th:each="member : ${members}"
-                th:value="${member.id}"
-                th:text="${member.name}" />
-      </select>
-    </div>
-    <div class="form-group">
       <label for="allergy">알러지명</label>
-      <select name="allergyId" id="allergy" class="form-control">
+      <select name="allergyId" id = "allergy" class="form-control">
         <option value="">알러지</option>
         <option th:each="allergy : ${allergys}"
                 th:value="${allergy.id}"
                 th:text="${allergy.name}" />
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="food">식품명</label>
+      <select name="foodId" id="food" class="form-control">
+        <option value="">식품</option>
+        <option th:each="food : ${foods}"
+                th:value="${food.id}"
+                th:text="${food.name}" />
       </select>
     </div>
     <button type="submit" class="btn btn-primary">Submit</button>

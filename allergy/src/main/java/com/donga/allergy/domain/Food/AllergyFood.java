@@ -26,4 +26,8 @@ public class AllergyFood {
     @JoinColumn(name = "allergy_id")
     private Allergy allergy;
 
+    public AllergyFood(Food food, Allergy allergy) {
+        this.food = food;
+        this.allergy = allergy;
+    }
 }

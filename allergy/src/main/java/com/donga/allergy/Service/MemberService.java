@@ -45,4 +45,5 @@ public class MemberService{
     public void plusAllergy(Member member,Allergy allergy){
         memberRepository.plusAllergy(member,allergy);
     }
+
 }
