@@ -1,0 +1,141 @@
+/*!
+ * Start Bootstrap - Shop Homepage (https://startbootstrap.com/template-overviews/shop-homepage)
+ * Copyright 2013-2019 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-shop-homepage/blob/master/LICENSE)
+ */
+
+body {
+  margin: 56px;
+}
+body,html{
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background: white; !important;
+}
+
+.searchbar{
+  margin-bottom: auto;
+  margin-top: auto;
+  height: 60px;
+  background-color: #536031;
+  border-radius: 30px;
+  padding: 10px;
+
+}
+.py-5{
+  margin-bottom: 90px;
+}
+
+
+.search_input{
+  color: white;
+  border: 0;
+  outline: 0;
+  background: none;
+  width: 0;
+  caret-color:transparent;
+  line-height: 40px;
+  transition: width 0.4s linear;
+}
+
+.searchbar:hover > .search_input{
+  padding: 0 10px;
+  width: 450px;
+  caret-color: #ffef82;
+  transition: width 0.4s linear;
+}
+
+.searchbar:hover > .search_icon{
+  background: #ffffff;
+  color: #725f00;
+}
+
+.search_icon{
+  height: 40px;
+  width: 40px;
+  float: right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color:white;
+  text-decoration:none;
+}
+
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left-item {
+  margin-right: 20px;
+}
+
+.right-item {
+  margin-left: auto;
+}
+.join-button {
+  background-color: #829548; /* 원하는 배경색으로 변경 */
+  color: white; /* 버튼 텍스트 색상 */
+  padding: 6px 15px; /* 버튼 내용과의 여백 조정 */
+  border: none; /* 테두리 제거 */
+  border-radius: 5px; /* 버튼 모서리 둥글게 만들기 */
+  cursor: pointer; /* 포인터 커서로 변경하여 버튼임을 나타냄 */
+}
+
+html,body{
+  margin:0;
+  padding:0;
+  background-color:#f2f2f2;
+}
+section{
+  width:400px;
+  margin:auto;
+}
+header{
+  text-align:center;
+  padding:80px 0px 10px 0px;
+  font-size:50px;
+}
+nav{
+  font-size:22px;
+  padding:10px 0 1px 0;
+}
+input[type="text"]{
+  border-style:none;
+  width:400px;
+  height:40px;
+  margin-top:1px;
+  border:2px solid #d8d8d8;
+  color:#d8d8d8;
+  padding-left:5px;
+  font-size:20px;
+}
+label{
+  margin:5px 8px 8px 5px;
+  font-size:22px;
+}
+#Gender{
+  margiit-top:6px;
+  margin-bottom:8px;
+}
+input[type="radio"] {
+  width: 23px;
+  height: 23px;
+  margin: 0 10px 0 0;
+}
+button{
+  width:400px;
+  height:50px;
+  border:2px solid #3873c1;
+  color:#3873c1;
+  font-size:20px;
+}
+footer{
+  text-align:center;
+  padding-top:5px;
+}
